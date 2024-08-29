@@ -17,10 +17,5 @@ public String home()
 {
 	return "principal"; //caminho real do arquivo
 }
-@GetMapping("/docente") //nome que eu quiser colocar
-public String docente()
-{
-	return "docente"; //caminho real do arquivo
 
-}
 }
