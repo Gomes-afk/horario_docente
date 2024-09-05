@@ -11,7 +11,7 @@
 <body>
 <div th:insert="~{layout/menu2}"></div>
 
-<form name="salvar_docente" class="form-horizontal" method="POST" action="{/salvar_docente}" th:object="${docenteEntity}">
+<form name="salvar_docente" class="form-horizontal" method="POST" th:action="@{/salvar_docente}" th:object="${docenteEntity}">
 
 <h1>Wave box docente</h1>
 
