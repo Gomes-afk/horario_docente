@@ -7,6 +7,7 @@ import br.com.horario_docente.entity.DocenteEntity;
 import br.com.horario_docente.entity.SetorEntity;
 
 @Repository
-public interface SetorRepository extends JpaRepository<SetorEntity, Long> {
+public interface SetorRepository
+extends JpaRepository<SetorEntity, Long> {
 
 }
