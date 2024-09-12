@@ -24,5 +24,23 @@
 	<button type="submit" class="btn btn-success form-control">Salvar</button>
 </div>
 
+<!--Começa lista de setores -->
+<br>
+<h5 class="card-title">Setores cadastrados</h5>
+    <table class="table table-sm table-striped table-hover table-bordered">
+		       <thead>
+				     <tr>
+						  <th>ID</th>
+						  <th>Nome</th>
+					 </tr>
+			   </thead>
+			   <tbody>
+				   <tr th:each="setor : ${setores}">
+					   <td th:text="${setor.IdSetor}"></td>
+					   <td th:text="${setor.Nome}"></td>
+				   </tr>
+			   </tbody>
+	</table>
+<!--Termina lista de docentes -->
 </body>
 </html>

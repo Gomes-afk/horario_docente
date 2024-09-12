@@ -23,11 +23,13 @@ public class SetorController {
 
 	
 	@GetMapping("/setor") //nome que eu quiser colocar
-	public String setor()
+	public String setor (ModelMap model)
 	{
-		return "setor"; //caminho real do arquivo
+		model.addAttribute("setores",setorRepository.findAll()); //caminho real do arquivo
+		return "setor";
 	
 	}
+	
 	
 	@PostMapping("/salvar_setor")
 	public ModelAndView save (
